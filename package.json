@@ -1,0 +1,28 @@
+{
+  "name": "restify-typescript-seed",
+  "version": "1.0.0",
+  "description": "a seed project for creating http service using restify written in typescript",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha dist/test/controllers/",
+    "compile": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "restify"
+  ],
+  "author": "Sul.Aga",
+  "license": "MIT",
+  "dependencies": {    
+    "restify": "^4.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "typescript": "^1.6.2"
+  }
+}
