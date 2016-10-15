@@ -37,5 +37,7 @@ node_modules
 coverage
 checkstyle-result.xml
 
-# generated js scripts from type-script
-dist
+app/**/*.js
+app/**/*.map
+test/**/*.js
+test/**/*.map

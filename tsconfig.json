@@ -1,18 +1,16 @@
 {
-    "compilerOptions": {
-        "target": "ES5",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,        
-        "sourceMap": true,
-        "module": "commonjs",
-        "outDir": "dist"                
-    }, 
-      "filesGlob": [
-        "./app/**/*.ts"
-    ],
-    "exclude": [
-       "node_modules",
-       "bower_components"       
-     ]
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true
+  },
+  "exclude": [
+    "logs",
+    "node_modules"
+  ]
 }

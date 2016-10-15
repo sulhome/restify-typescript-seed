@@ -1,9 +1,9 @@
-var fs = require('fs');
-import restify = require('restify');
-import {settings} from './config';
-import {logger} from './logger';
+import * as fs from 'fs';
+import * as restify from 'restify';
+import { settings } from './config/config';
+import { logger } from './services/logger';
 
-var api = restify.createServer({
+export let api = restify.createServer({
   name: settings.name
 });
 
@@ -17,13 +17,13 @@ api.use(restify.authorizationParser());
 api.use(restify.fullResponse());
 
 
-fs.readdirSync(__dirname + '/routes').forEach(function(routeConfig:string) {
+fs.readdirSync(__dirname + '/routes').forEach(function (routeConfig: string) {
   if (routeConfig.substr(-3) === '.js') {
-    var route = require(__dirname + '/routes/' + routeConfig);
+    let route = require(__dirname + '/routes/' + routeConfig);
     route.routes(api);
   }
 });
 
-api.listen(settings.port, function() {
-  console.log(`INFO: ${settings.name} is running at ${api.url}`);
+api.listen(settings.port, function () {
+  logger.info(`INFO: ${settings.name} is running at ${api.url}`);
 });

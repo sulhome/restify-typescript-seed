@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "explorer.openEditors.visible": 0,
+     "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "app/**/*.js": true,
+        "app/**/*.map": true,
+        "test/**/*.js": true,
+        "test/**/*.map": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

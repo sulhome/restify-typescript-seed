@@ -4,8 +4,9 @@
   "description": "a seed project for creating http service using restify written in typescript",
   "main": "app.js",
   "scripts": {
-    "test": "mocha dist/test/controllers/",
-    "compile": "tsc"
+    "test": "node_modules/.bin/_mocha test/unit/**/*.spec.js",
+    "compile": "node_modules/.bin/tsc",
+    "start": "node app/app.js"
   },
   "keywords": [
     "typescript",
@@ -13,16 +14,21 @@
   ],
   "author": "Sul.Aga",
   "license": "MIT",
-  "dependencies": {    
-    "restify": "^4.0.3"
+  "dependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.45",
+    "@types/restify": "^2.0.33",
+    "@types/sinon": "^1.16.31",
+    "@types/supertest": "^1.1.31",
+    "restify": "^4.1.1"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "gulp": "^3.9.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-typescript": "^2.9.2",
-    "mocha": "^2.3.4",
-    "sinon": "^1.17.2",
-    "typescript": "^1.6.2"
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6",
+    "supertest": "^2.0.0",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
   }
 }

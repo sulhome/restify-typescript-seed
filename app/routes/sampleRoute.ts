@@ -1,4 +1,4 @@
-import restify = require('restify');
+import * as restify from 'restify';
 import sampleRouteController from '../controllers/SampleRouteController'
 
 function sampleRoute(api:restify.Server) {
