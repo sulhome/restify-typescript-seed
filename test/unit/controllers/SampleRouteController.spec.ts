@@ -9,7 +9,7 @@ describe('sample route controller', () => {
 
     let expect = chai.expect;
     let sandbox = sinon.sandbox.create();
-    let logInfoStub: Sinon.SinonStub;
+    let logInfoStub: sinon.SinonStub;
 
     beforeEach(() => {
         logInfoStub = sandbox.stub(logger, 'info');
